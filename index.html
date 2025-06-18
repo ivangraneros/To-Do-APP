@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- js -->
+    <script defer src="main.js"></script>
+</head>
+<body>
+
+            <!--botones tareas--> 
+        <div class="botones">
+            <button class="button-tareas type1" onclick="setFilter('all')">
+            <span class="btn-txt">Todas</span>
+            </button>
+            <button class="button-tareas type1" onclick="setFilter('pending')">
+            <span class="btn-txt">Pendientes</span>
+            </button>
+            <button class="button-tareas type1" onclick="setFilter('completed')">
+            <span class="btn-txt">Completadas</span>
+            </button>
+        </div>
+
+    <section id="todo" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">📝 Mis Tareas</h2>
+            <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="input-group mb-3">
+                <!-- input --> 
+                <input placeholder="Escribe tu tarea..." class="input" name="text" type="text" id="taskInput"/>
+                <!-- boton --> 
+                <button type="button" class="button" onclick="addTask()">
+                <span class="button__text">Agregar</span>
+                <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                </button>
+                </div>
+                <ul id="taskList" class="list-group"></ul>
+            </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

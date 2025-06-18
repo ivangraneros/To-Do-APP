@@ -1,0 +1,161 @@
+body {
+    background-color: #252525;
+}
+
+
+#todo .list-group-item {
+  background-color: #1c1e22;
+  color: #f1f1f1;
+  border: 2px solid #2c2f36;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#todo .list-group-item.completed {
+  text-decoration: line-through;
+  color: #34974d;
+  background-color: #2a2d33;
+}
+
+#todo .btn-sm {
+  margin-left: 10px;
+}
+
+.text-center {
+    color: #f1f1f1;
+}
+
+/* input */ 
+.input {
+  color: white;
+  border: 2px solid #34974d;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background: transparent;
+  max-width: 190px;
+  cursor: pointer;
+}
+
+.input:hover {
+  box-shadow: 2px 2px 15px #3aa856 inset;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* botones tareas */ 
+.button-tareas {
+  height: 50px;
+  width: 200px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #ccbcbc;
+  overflow: hidden;
+  border-radius: 30px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  margin: 20px;
+}
+
+.btn-txt {
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #333;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.button-tareas:hover {
+  box-shadow: 1px 1px 200px #252525;
+  color: #fff;
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* boton agregar tarea */ 
+.button {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #34974d;
+  background-color: #3aa856;
+}
+
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #34974d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.button:hover {
+  background: #34974d;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #2e8644;
+}
+
+.button:active {
+  border: 1px solid #2e8644;
+}
