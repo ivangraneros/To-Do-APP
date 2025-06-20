@@ -76,7 +76,7 @@ body {
   left: 0;
   top: 0;
   transition: all 0.5s ease-in-out;
-  background-color: #333;
+  background-color: #ffffff;
   border-radius: 30px;
   visibility: hidden;
   height: 10px;
@@ -85,8 +85,8 @@ body {
 }
 
 .button-tareas:hover {
-  box-shadow: 1px 1px 200px #252525;
-  color: #fff;
+  box-shadow: 1px 1px 200px #fcfcfc;
+  color: #000000;
   border: none;
 }
 
